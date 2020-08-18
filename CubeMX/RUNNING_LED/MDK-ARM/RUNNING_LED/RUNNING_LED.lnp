@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"running_led\startup_stm32f103x6.o"
+"running_led\main.o"
+"running_led\stm32f1xx_it.o"
+"running_led\stm32f1xx_hal_msp.o"
+"running_led\stm32f1xx_hal_gpio_ex.o"
+"running_led\stm32f1xx_hal_tim.o"
+"running_led\stm32f1xx_hal_tim_ex.o"
+"running_led\stm32f1xx_hal.o"
+"running_led\stm32f1xx_hal_rcc.o"
+"running_led\stm32f1xx_hal_rcc_ex.o"
+"running_led\stm32f1xx_hal_gpio.o"
+"running_led\stm32f1xx_hal_dma.o"
+"running_led\stm32f1xx_hal_cortex.o"
+"running_led\stm32f1xx_hal_pwr.o"
+"running_led\stm32f1xx_hal_flash.o"
+"running_led\stm32f1xx_hal_flash_ex.o"
+"running_led\stm32f1xx_hal_exti.o"
+"running_led\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RUNNING_LED\RUNNING_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RUNNING_LED.map" -o RUNNING_LED\RUNNING_LED.axf
